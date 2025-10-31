@@ -1,0 +1,55 @@
+# Private keys - NEVER commit these!
+*.pem
+*.key
+*.ppk
+id_rsa*
+*.cer
+*.crt
+
+# Azure credentials
+*.azureauth
+.azure/
+
+# Logs
+*.log
+logs/
+*.out
+
+# System files (Mac)
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# Private configuration
+config.local
+secrets.txt
+passwords.txt
+.env
+.env.local
+
+# Test results
+test-results/
+security-reports/
+pentest-results/
+
+# Backup files
+*.bak
+*.backup
+
+# IDE files
+.vscode/
+.idea/
+*.sublime-*
+
+# Compiled files
+*.o
+*.so
+*.exe

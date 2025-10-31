@@ -1,0 +1,18 @@
+```
+# Audit Rules Configuration
+# Place in /etc/audit/rules.d/hardening.rules
+
+# Monitor identity files
+-w /etc/passwd -p wa -k identity
+-w /etc/group -p wa -k identity
+-w /etc/shadow -p wa -k identity
+
+# Monitor sudo
+-w /etc/sudoers -p wa -k sudoers
+
+# Monitor SSH
+-w /etc/ssh/sshd_config -p wa -k sshd
+
+# Monitor network
+-w /etc/hosts -p wa -k network
+```

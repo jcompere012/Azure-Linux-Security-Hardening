@@ -1,0 +1,12 @@
+# SSH Hardening Configuration
+
+Protocol 2
+PermitRootLogin no
+PasswordAuthentication no
+PubkeyAuthentication yes
+PermitEmptyPasswords no
+MaxAuthTries 3
+LoginGraceTime 1m
+ClientAliveInterval 300
+ClientAliveCountMax 2
+X11Forwarding no

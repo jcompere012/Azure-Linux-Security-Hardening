@@ -1,0 +1,14 @@
+# UFW Firewall Rules
+
+# Default policies
+ufw default deny incoming
+ufw default allow outgoing
+
+# SSH with rate limiting
+ufw allow  22/tcp 
+
+# Enable logging
+ufw logging on
+
+# Enable firewall
+ufw enable
