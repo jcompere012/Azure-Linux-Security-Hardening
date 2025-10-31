@@ -4,7 +4,7 @@ A comprehensive security hardening project for Linux systems deployed on Microso
 
 ## 🎯 Project Overview
 
-This project demonstrates enterprise-grade security hardening for Linux servers, featuring:
+This project demonstrates enterprise-grade security hardening for Linux servers:
 - Automated system patching
 - SSH hardening with key-based authentication
 - Firewall configuration (UFW)
@@ -19,6 +19,16 @@ This project demonstrates enterprise-grade security hardening for Linux servers,
 - **Security Tools**: UFW, auditd, Fail2Ban, Lynis, rkhunter
 - **Monitoring**: Custom security check scripts
 
+## 🛠️ Technologies Used
+
+- **Cloud Platform**: Microsoft Azure
+- **Operating System**: Ubuntu 22.04 LTS
+- **Firewall**: UFW (Uncomplicated Firewall)
+- **Auditing**: auditd
+- **IPS**: Fail2Ban
+- **Security Scanning**: Lynis, rkhunter
+- **Scripting**: Bash
+
 ## 📋 Prerequisites
 
 - Azure account with active subscription
@@ -26,15 +36,13 @@ This project demonstrates enterprise-grade security hardening for Linux servers,
 - SSH client installed
 
 ### 1. Deploy Infrastructure
-```bash
-# Create Azure resources (Resource Group, VNet, VM)
+# Create Azure resources (Resource Group, Virtual Network, Virtual Machine)
 - Resource group: security-hardening-rg
 - Virtual network: security-vnet
 - Virtual Machine: security-linux-vm
-```
+
 
 ### 2. Run Security Hardening
-```bash
 # SSH into the VM
 ssh -i security-linux-vm_key.pem azureuser@48.194.95.70
 
@@ -45,7 +53,6 @@ sudo apt update && sudo apt upgrade -y
 - ✅ Automatic security updates
 - ✅ Minimal service exposure
 - ✅ Secure file permissions
-- ✅ Kernel parameter hardening
 
 ### Access Control
 - ✅ SSH key-only authentication
@@ -63,14 +70,4 @@ sudo apt update && sudo apt upgrade -y
 - ✅ System auditing with auditd
 - ✅ Comprehensive logging
 - ✅ Automated security checks
-- ✅ Alert mechanisms
 
-## 🛠️ Technologies Used
-
-- **Cloud Platform**: Microsoft Azure
-- **Operating System**: Ubuntu 22.04 LTS
-- **Firewall**: UFW (Uncomplicated Firewall)
-- **Auditing**: auditd
-- **IPS**: Fail2Ban
-- **Security Scanning**: Lynis, rkhunter, chkrootkit
-- **Scripting**: Bash
