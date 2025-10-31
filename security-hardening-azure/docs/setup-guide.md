@@ -20,7 +20,8 @@
 - cd ~/Downlaods
 - chmod 400 security-linux-vm_key.pem
 - SSH -i security-linux-vm_key.pem azureuser@48.194.95.70
-<img width="842" height="889" alt="Screenshot 2025-10-30 at 7 33 22 AM" src="https://github.com/user-attachments/assets/b64d2d95-e740-4856-9f47-cd0990e6c4c7" />
+<img width="731" height="201" alt="Screenshot 2025-10-31 at 4 25 36 PM" src="https://github.com/user-attachments/assets/edc9cdfc-f34a-4599-8627-4323c9749884" />
+
 
 ### 2. System hardening steps
 
@@ -102,7 +103,7 @@ findtime = 600
 #### Testing
 <img width="1381" height="558" alt="Screenshot 2025-10-30 at 8 55 23 AM" src="https://github.com/user-attachments/assets/183ce263-6695-44c7-8d06-d0f740961629" />
 <img width="1381" height="171" alt="Screenshot 2025-10-30 at 8 55 52 AM" src="https://github.com/user-attachments/assets/e76b9d11-ab31-4269-8ef9-ec9cf834d965" />
-<img width="1381" height="308" alt="Screenshot 2025-10-30 at 9 16 58 AM" src="https://github.com/user-attachments/assets/350f7b2f-1442-489f-8231-57069b08ea4b" />
+<img width="1381" height="308" alt="Screenshot 2025-10-30 at 9 16 58 AM" src="https://github.com/user-attachments/assets/b6c004dc-e383-49be-9c2d-537a09253023" />
 
 ### 9. Set secure file permissions
 - sudo chmod 600 /etc/ssh/sshd_config
@@ -129,5 +130,6 @@ findtime = 600
 - sudo nano /usr/local/bin/security-check.sh
 <img width="1381" height="898" alt="Screenshot 2025-10-30 at 8 46 58 AM" src="https://github.com/user-attachments/assets/32eb1a96-7241-489b-9101-fe84c4718e09" />
 #### Testing script
-<img width="1381" height="898" alt="Screenshot 2025-10-30 at 8 48 21 AM" src="https://github.com/user-attachments/assets/fbee93d5-a125-4764-86e5-13ebabb18736" />
+<img width="802" height="588" alt="Screenshot 2025-10-31 at 4 28 40 PM" src="https://github.com/user-attachments/assets/38768627-66ef-471c-95d8-35f60a2bb015" />
+
 
